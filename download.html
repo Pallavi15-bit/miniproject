@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAGNI - Download</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f4e3dc;
+            text-shadow: 0 0 15px #703621, 0 0 30px #9c3939;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #cfbfbc;
+        }
+        .download-btn {
+            background: linear-gradient(90deg, #b87761, #ff0000);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 50px;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(203, 81, 36, 0.7);
+            transition: 0.3s;
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+        }
+        .download-btn:hover {
+            box-shadow: 0 0 30px rgb(170, 88, 58);
+            transform: scale(1.1);
+        }
+        .features {
+            margin-top: 30px;
+            padding: 20px;
+            width: 60%;
+            background: rgba(255, 69, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(192, 109, 79, 0.7);
+            position: relative;
+            z-index: 2;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ea846d;
+        }
+        .floating-blobs {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, #e44004, #ff0000);
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.6;
+            animation: float 6s infinite alternate ease-in-out;
+        }
+        .blob:nth-child(1) {
+            top: 10%;
+            left: 20%;
+        }
+        .blob:nth-child(2) {
+            bottom: 10%;
+            right: 20%;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) scale(1); }
+            100% { transform: translateY(-20px) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    <div class="container">
+        <h1>AAGNI</h1>
+        <p>Your Ultimate AI Assistant for Productivity & Innovation</p>
+        <a href="https://github.com/arpanghosal0160/miniprj.git/download/v1.0/AAGNI-Setup.exe" class="download-btn" download>Download for Windows</a>
+        <div class="features">
+            <h2>Why Choose AAGNI?</h2>
+            <ul>
+                <li>🚀 Smart AI-driven Assistance</li>
+                <li>⚡ Lightning-fast Responses</li>
+                <li>🔐 Secure & Private</li>
+                <li>🛠️ Multi-functional Capabilities</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
