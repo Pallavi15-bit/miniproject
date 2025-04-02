@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     });
 });
+
+window.onload = function () {
+    setTimeout(() => {
+        window.location.href = "https://github.com/arpanghosal0160/miniprj/releases/download/v1.0/AAGNI-Setup.exe";
+    }, 2000); // 2-second delay before download starts
+};
+
