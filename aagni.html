@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAGNI - Login</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff4500;
+            text-shadow: 0 0 10px #ff4500;
+        }
+        .form-container {
+            background: rgba(255, 69, 0, 0.1);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+            width: 300px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .login-btn {
+            background: linear-gradient(90deg, #ff4500, #ff0000);
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+            transition: 0.3s;
+            width: 100%;
+        }
+        .login-btn:hover {
+            box-shadow: 0 0 30px rgba(255, 69, 0, 1);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AAGNI - Login</h1>
+        <div class="form-container">
+            <form action="download.html" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@xyz\.(com|in|co)" title="Email must be in the format abc@xyz.com, abc@xyz.in, or abc@xyz.co">
+                <input type="tel" name="contact" placeholder="Contact No." required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
