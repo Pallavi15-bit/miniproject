@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAGNI - Login</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AAGNI - Login</h1>
+        <div class="form-container">
+            <form id="loginForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@xyz\.(com|in|co)" title="Email must be in the format abc@xyz.com, abc@xyz.in, or abc@xyz.co">
+                <input type="tel" id="contact" placeholder="Contact No." required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/login.js"></script>
+</body>
+</html>
